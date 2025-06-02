@@ -2,12 +2,12 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>角色介紹 | 豆腐小說館</title>
+  <title>角色介紹</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: "標楷體", "KaiTi", serif;
-      background-image: url("img/flower-border-bg.png"); /* 花邊背景圖（需準備） */
+      background-image: url("img/flower-border-bg.png");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -18,7 +18,7 @@
 
     header {
       text-align: center;
-      background-color: rgba(158, 61, 63, 0.95); /* 深宮紅 */
+      background-color: rgba(158, 61, 63, 0.95);
       color: #fffaf0;
       padding: 1.5rem 0;
       border-bottom: 5px double #e8d9b7;
@@ -47,24 +47,41 @@
       background-color: #fffdf7;
       border: 2px solid #d3c4a3;
       border-radius: 12px;
-      width: 220px;
+      width: 280px;
       overflow: hidden;
-      transition: transform 0.3s;
       box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .character-card:hover {
       transform: translateY(-6px);
     }
 
-    .character-card img {
+    .character-image {
       width: 100%;
-      height: auto;
+      height: 260px;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .character-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
       display: block;
     }
 
     .character-info {
       padding: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
     }
 
     .character-info h3 {
@@ -84,33 +101,74 @@
 <body>
 
   <header>
-    豆腐小說館 · 角色介紹
+    本宮今日不進鍋· 角色介紹
   </header>
 
   <section class="character-section">
     <div class="character-grid">
 
       <div class="character-card">
-        <img src="img/rourou.jpg" alt="白柔柔">
+        <div class="character-image">
+          <img src="245761_0.jpg" alt="豆婉凝">
+        </div>
         <div class="character-info">
-          <h3>白柔柔</h3>
-          <p>一朝穿越成為選妃豆腐，在宮廷中周旋各方勢力，本宮今日不進鍋！</p>
+          <h3>豆婉凝</h3>
+          <p>原型：嫩豆腐。</p>
+          <p>一朝穿越成為一塊在冰宮的豆腐，在宮廷中周旋各方勢力，並且試圖對抗要進鍋的命運。</p>
         </div>
       </div>
 
       <div class="character-card">
-        <img src="img/emperor.jpg" alt="豆皇">
+        <div class="character-image">
+          <img src="245762_0.jpg" alt="油儀樺">
+        </div>
         <div class="character-info">
-          <h3>豆皇</h3>
-          <p>外冷內熱的宮廷之主，擁有神秘豆花秘方，愛上了白柔柔的真性情。</p>
+          <h3>油儀樺</h3>
+          <p>原型：油豆腐。</p>
+          <p>表面和順溫潤，內裡暗藏計謀與毒意。就像油豆腐外層光滑金黃、內裡中空，可以塞什麼都不容易察覺，一口咬下才知滋味。</p>
         </div>
       </div>
 
       <div class="character-card">
-        <img src="img/tofuEunuch.jpg" alt="豆監">
+        <div class="character-image">
+          <img src="ChatGPT Image 2025年6月3日 上午02_33_35.png" alt="沈紅椒">
+        </div>
         <div class="character-info">
-          <h3>豆監</h3>
-          <p>宮中太監首領，實為前朝遺臣，默默守護宮廷和平。</p>
+          <h3>沈紅椒</h3>
+          <p>原型：麻婆豆腐</p>
+          <p>性格潑辣、狠毒，恃寵而驕，不把任何人放進眼裡。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-image">
+          <img src="245766_0.jpg" alt="青竹">
+        </div>
+        <div class="character-info">
+          <h3>青竹</h3>
+          <p>原型：青菜</p>
+          <p>豆婉凝的貼身婢女，是她的得力助手。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-image">
+          <img src="245764_0.jpg" alt="文思">
+        </div>
+        <div class="character-info">
+          <h3>文思</h3>
+          <p>原型：文思豆腐</p>
+          <p>豆婉凝的好友之一，性格柔弱，多愁善感。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-image">
+          <img src="245765_0.jpg" alt="玉芙棠">
+        </div>
+        <div class="character-info">
+          <h3>玉芙棠</h3>
+          <p>豆婉凝的宮中好友之一，溫柔、可靠，幫助過豆婉凝很多次。</p>
         </div>
       </div>
 
