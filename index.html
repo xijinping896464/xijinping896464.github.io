@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小說館</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top"></body>
+
+<body>
+</section>
+<div id="fog"></div>
+  <header>
+<div class="carousel">
+  <div class="carousel-track">
+    <img src="06021.jpg" alt="圖1">
+    <img src="06022.jpg" alt="圖2">
+    <img src="06023_0.jpg" alt="圖3">
+    <img src="06024_0.png" alt="圖4">
+    <img src="06025_0.jpg" alt="圖5">
+    <img src="06026_0.jpg" alt="圖6">
+    <img src="06027_0.jpg" alt="圖7">
+    <img src="06028_0.jpg" alt="圖8">
+  </div>
+</div>
+    </div>
+    <h1 class="site-title">本宮今日不入鍋</h1>
+  </header>
+  <div class="petal-container"></div>
+
+<div class="nav-bar">
+  <a href="characters.html" class="nav-link">角色介紹</a>
+</div>
+
+
+
+  <section class="text-center py-10 bg-gray-100">
+  <h1 class="intro-title">歡迎來到我的網站</h1>
+  <p class="intro-text">
+    這是一個介紹短篇小說的網站，主要是透過短短的對話，讓人先了解這篇小說是在講什麼內容，有點像是每回章節的預告文，並且會有人物介紹的部分。
+  </p>
+</section>
+
+  <main>
+    <a href="story1.html" class="story-link">第1回：豆腐宮初醒</a>
+    <a href="story2.html" class="story-link">第2回：迷霧試煉</a>
+    <a href="story3.html" class="story-link">第3回：皇上的密令</a>
+    <a href="story4.html" class="story-link">第4回：豆腐貴妃出場</a>
+    <a href="story5.html" class="story-link">第5回：浴室風波</a>
+    <a href="story6.html" class="story-link">第6回：黑影現身</a>
+    <a href="story7.html" class="story-link">第7回：我不是宮女</a>
+    <a href="story8.html" class="story-link">第8回：意外的吻</a>
+    <a href="story9.html" class="story-link">第9回：誰偷了豆腐心</a>
+    <a href="story10.html" class="story-link">第10回：真相浮現</a>
+  </main>
+  <div class="back-to-top-container">
+  <a href="#top" class="back-to-top">回到最頂</a>
+</div>
+
+</body>
+<script>
+  const petalContainer = document.querySelector('.petal-container');
+
+  function createPetal() {
+    const petal = document.createElement('div');
+    petal.classList.add('petal');
+    petal.style.left = Math.random() * 100 + 'vw';
+    petal.style.animationDuration = (5 + Math.random() * 5) + 's'; // 5~10秒飄落
+    petal.style.fontSize = (12 + Math.random() * 12) + 'px'; // 隨機大小
+    petal.textContent = '🌸';
+
+    petalContainer.appendChild(petal);
+
+    // 5~10秒後移除花瓣避免累積過多元素
+    setTimeout(() => {
+      petal.remove();
+    }, (5 + Math.random() * 5) * 1000);
+  }
+
+  // 每 300 毫秒新增一片花瓣
+  setInterval(createPetal, 300);
+</script>
+
+<script>
+  let currentIndex = 0;
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-track img');
+  const totalSlides = slides.length;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    track.style.transform = `translateX(-${currentIndex * 15}%)`;
+  }, 3000); // 每 3 秒切換
+</script>
+
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>角色介紹 | 豆腐小說館</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "標楷體", "KaiTi", serif;
+      background-image: url("img/flower-border-bg.png"); /* 花邊背景圖（需準備） */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #3a3a3a;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: rgba(158, 61, 63, 0.95); /* 深宮紅 */
+      color: #fffaf0;
+      padding: 1.5rem 0;
+      border-bottom: 5px double #e8d9b7;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    .character-section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.92);
+      border: 2px solid #e8d9b7;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .character-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .character-card {
+      background-color: #fffdf7;
+      border: 2px solid #d3c4a3;
+      border-radius: 12px;
+      width: 220px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .character-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .character-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .character-info {
+      padding: 1rem;
+    }
+
+    .character-info h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.4rem;
+      color: #7a2f30;
+      border-bottom: 1px dashed #d3c4a3;
+      padding-bottom: 0.3rem;
+    }
+
+    .character-info p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    豆腐小說館 · 角色介紹
+  </header>
+
+  <section class="character-section">
+    <div class="character-grid">
+
+      <div class="character-card">
+        <img src="img/rourou.jpg" alt="白柔柔">
+        <div class="character-info">
+          <h3>白柔柔</h3>
+          <p>一朝穿越成為選妃豆腐，在宮廷中周旋各方勢力，本宮今日不進鍋！</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <img src="img/emperor.jpg" alt="豆皇">
+        <div class="character-info">
+          <h3>豆皇</h3>
+          <p>外冷內熱的宮廷之主，擁有神秘豆花秘方，愛上了白柔柔的真性情。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <img src="img/tofuEunuch.jpg" alt="豆監">
+        <div class="character-info">
+          <h3>豆監</h3>
+          <p>宮中太監首領，實為前朝遺臣，默默守護宮廷和平。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
